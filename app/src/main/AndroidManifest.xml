@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyril.collection">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.cyril.collection.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.cyril.collection.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cyril.collection.StartActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="开始页"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="JS缓存"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".addtabrow.AddTableRowActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="自动添加TableRow"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".configuration.ConfigurableActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="配置化"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".fetchpiccolor.FetchColorActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="提取图片颜色"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".picupload.ImageDealActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="图片压缩处理"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".crashcatch.CrashCaughtActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="异常捕获"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".sendmail.SendMailActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="发送邮件"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".codelogin.BCLoginActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="扫码登录"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".codelogin.zxing.activity.CaptureActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="扫描二维码"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".JsBridge.JsBridgeActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="JSBridge"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".uploadfiles.UploadActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="上传文件"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".uncertaintyjson.DiffTypeOfJsonActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="JSON数据解析"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".incnumber.IncreaseNumberActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="数字增加动画"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+
+        <service android:name="com.cyril.collection.downSource.DownloadService" />
+        <service android:name="com.cyril.collection.downSource.DownloadService2" />
+    </application>
+
+</manifest>
