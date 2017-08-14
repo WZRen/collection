@@ -34,4 +34,13 @@
 
     <color name="tagLight">#b1c914</color>
     <color name="tagDark">#206fa1</color>
+
+    <color name="gray_eeeeee">#eeeeee</color>
+    <color name="gray_cccccc">#cccccc</color>
+    <color name="gray_bbbbbb">#bbbbbb</color>
+    <color name="red_ff725f">#ff725f</color>
+    <color name="calendar_week_bg_color">#f2f2f2</color>
+    <color name="black_80000000">#80000000</color>
+
+    <color name="bg_calendar_listview_header_e9e9e9">#e9e9e9</color>
 </resources>

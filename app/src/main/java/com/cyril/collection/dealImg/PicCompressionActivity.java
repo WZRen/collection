@@ -1,4 +1,4 @@
-package com.cyril.collection.picupload;
+package com.cyril.collection.dealImg;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -19,7 +19,7 @@ import java.util.Date;
 /**
  * Created by cyril on 2017/5/8.
  */
-public class ImageDealActivity extends Activity {
+public class PicCompressionActivity extends Activity {
 
     private ImageView imageView;
     private TextView textView;
@@ -27,7 +27,7 @@ public class ImageDealActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_deal);
+        setContentView(R.layout.activity_pic_compression);
         imageView = (ImageView) findViewById(R.id.image);
         textView = (TextView) findViewById(R.id.textView);
 

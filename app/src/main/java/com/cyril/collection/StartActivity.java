@@ -70,7 +70,7 @@ public class StartActivity extends AppCompatActivity {
 
 //        webView.loadUrl("http://192.168.111.20/test.html");
 
-        tags = new String[]{"JS缓存", "Add TabRow", "配置化", "获取颜色值", "图片压缩", "异常捕获", "发送邮件", "扫码登录", "JsBridge", "上传", "Json类型","数字递增动画"};
+        tags = new String[]{"JS缓存", "Add TabRow", "配置化", "获取颜色值", "图片处理", "异常捕获", "发送邮件", "扫码登录", "JsBridge", "上传", "Json类型", "数字递增动画", "备忘日历"};
 
         tagCloudView = (TagCloudView) findViewById(R.id.tag_cloud);
         tagCloudView.setBackgroundColor(Color.LTGRAY);

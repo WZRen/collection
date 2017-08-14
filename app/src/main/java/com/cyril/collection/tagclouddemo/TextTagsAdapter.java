@@ -12,12 +12,13 @@ import android.widget.TextView;
 import com.cyril.collection.JsBridge.JsBridgeActivity;
 import com.cyril.collection.MainActivity;
 import com.cyril.collection.addtabrow.AddTableRowActivity;
+import com.cyril.collection.calendarlist.CalendarListActivity;
 import com.cyril.collection.codelogin.BCLoginActivity;
 import com.cyril.collection.configuration.ConfigurableActivity;
 import com.cyril.collection.crashcatch.CrashCaughtActivity;
+import com.cyril.collection.dealImg.ImageMainActivity;
 import com.cyril.collection.fetchpiccolor.FetchColorActivity;
 import com.cyril.collection.incnumber.IncreaseNumberActivity;
-import com.cyril.collection.picupload.ImageDealActivity;
 import com.cyril.collection.sendmail.SendMailActivity;
 import com.cyril.collection.uncertaintyjson.DiffTypeOfJsonActivity;
 import com.cyril.collection.uploadfiles.UploadActivity;
@@ -66,7 +67,8 @@ public class TextTagsAdapter extends TagsAdapter {
                         context.startActivity(new Intent(context, FetchColorActivity.class));
                         break;
                     case 4:
-                        context.startActivity(new Intent(context, ImageDealActivity.class));
+                        context.startActivity(new Intent(context, ImageMainActivity.class));
+//                        context.startActivity(new Intent(context, PicCompressionActivity.class));
                         break;
                     case 5:
                         context.startActivity(new Intent(context, CrashCaughtActivity.class));
@@ -89,6 +91,9 @@ public class TextTagsAdapter extends TagsAdapter {
                     case 11:
                         context.startActivity(new Intent(context, IncreaseNumberActivity.class));
                         break;
+                    case 12:
+                        context.startActivity(new Intent(context, CalendarListActivity.class));
+                        break;
                 }
             }
         });
@@ -108,6 +113,6 @@ public class TextTagsAdapter extends TagsAdapter {
 
     @Override
     public void onThemeColorChanged(View view, int themeColor) {
-        view.setBackgroundColor(themeColor);
+//        view.setBackgroundColor(themeColor);
     }
 }

@@ -2,6 +2,7 @@ package com.cyril.collection.post;
 
 
 import com.cyril.collection.comconfig.AppConfig;
+import com.cyril.collection.modules.News;
 import com.cyril.collection.modules.Response;
 import com.cyril.collection.modules.SourceMod;
 
@@ -12,9 +13,11 @@ import okhttp3.MultipartBody;
 import okhttp3.ResponseBody;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
+import retrofit2.http.Path;
 import rx.Observable;
 
 /**
@@ -37,4 +40,7 @@ public interface ApiService {
     @FormUrlEncoded
     @POST(AppConfig.URL + "parserdata.php")
     Observable<Response> parserData(@FieldMap Map<String, String> param);
+
+    @GET("http://news-at.zhihu.com/api/4/news/before/{date}")
+    Observable<News> getNewsList(@Path("date") String date);
 }

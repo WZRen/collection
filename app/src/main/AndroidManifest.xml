@@ -58,7 +58,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".picupload.ImageDealActivity"
+            android:name=".dealImg.PicCompressionActivity"
             android:icon="@mipmap/ic_launcher"
             android:label="图片压缩处理"
             android:supportsRtl="true"
@@ -110,6 +110,25 @@
             android:name=".incnumber.IncreaseNumberActivity"
             android:icon="@mipmap/ic_launcher"
             android:label="数字增加动画"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".dealImg.ImageMainActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="图片处理"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".dealImg.PhotosynthActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="图片合成"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".calendarlist.CalendarListActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="备忘日历"
             android:supportsRtl="true"
             android:theme="@style/AppTheme" />
 

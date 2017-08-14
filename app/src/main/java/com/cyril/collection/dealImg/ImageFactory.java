@@ -1,4 +1,4 @@
-package com.cyril.collection.picupload;
+package com.cyril.collection.dealImg;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
